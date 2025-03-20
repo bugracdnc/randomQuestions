@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from random import randint
 from os import listdir, system, name
 from os.path import isfile, join
@@ -42,8 +44,9 @@ for i in range(0, qLen): # Main loop of the program
         # for linux
         system('clear')
     else:
-    # for windows platfrom
+        # for windows platfrom
         system('cls')
+
     print(f"{selFile_f}") # file name as title
     print("----------------------------\n")
     print(f"\033[1m\033[96m{qList[rIndex[i]]}\033[0m\n") # puts the question in bold blue text
